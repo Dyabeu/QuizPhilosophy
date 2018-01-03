@@ -48,6 +48,7 @@
       for(j=0; j<numActiveQuestions; j++){
         if(DataService.quizQuestionsData[j].playerAnswer !== null) {
           numQuestionsAnswered++;
+          console.log(numQuestionsAnswered);
           if(numQuestionsAnswered >= numActiveQuestions){
             thisBind.finalise = true;
             return;
@@ -56,10 +57,13 @@
       };
       thisBind.setActiveQuestion();
     };
+
     //Function set answer selected by player
     function answerSelected(index){
+      console.log(index);
       DataService.quizQuestionsData[thisBind.activeQuestion].playerAnswer = index;
     };
+
     // Function that changes state to results and reset rest of the important expressions
     function finaliseAnswers(){
       thisBind.finalise = false;

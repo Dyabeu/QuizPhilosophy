@@ -146,9 +146,13 @@
             <h4>{{quiz.activeQuestion + 1 + ". " + quiz.dataService.quizQuestionsData[quiz.activeQuestion].question}}</h4>
             <div class="row">
               <div class="col-sm-4 col-md-4" ng-repeat="answer in quiz.dataService.quizQuestionsData[quiz.activeQuestion].posibleAnswer">
-                <div class="image-container  center-block" ng-class="{'image-answer-picked': $index === quiz.dataService.quizQuestionsData[quiz.activeQuestion].playerAnswer}">
-                  <img ng-src="{{answer.answer}}" alt="where is that img? Error" class="image-quiz-answer" ng-click="quiz.answerSelected($index)">
-                </div>
+                <label>
+                  <div class="image-container  center-block" ng-class="{'image-answer-picked': $index === quiz.dataService.quizQuestionsData[quiz.activeQuestion].playerAnswer}">
+                    <img ng-src="{{answer.answer}}" alt="where is that img? Error" class="image-quiz-answer" ng-click="">
+                  </div>
+
+                  <input class="radioImgCheckBox" type="radio" ng-model="quiz.dataService.quizQuestionsData[quiz.activeQuestion].playerAnswer" ng-value="$index">
+                </label>
               </div>
             </div>
             <div class="row">
