@@ -1,5 +1,11 @@
 body {
-    background-color: rgb(255, 255, 204) !important;
+    background-color: rgb(166, 166, 166);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Poppins", sans-serif !important;
+    font: inherit;
 }
 
 ul>li {
@@ -46,6 +52,59 @@ ul>li:last-child {
 .pull-bottom {
     position: absolute;
     bottom: 10px;
+}
+
+.fadeText {
+     -webkit-animation: fadein 2s linear 1 normal forwards;
+}
+
+@-webkit-keyframes fadein{
+    from{
+       opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.showText {
+    color: rgba(255,255,255,0.85);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: fixed;
+    z-index: 10;
+    top: 80px;
+}
+
+.showText p:last-child {
+    font-size: 3rem;
+}
+
+.showText p:last-child::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+
+.parallax {
+      /* The image used */
+    background-image: url("../images/bg.jpg");
+
+    min-height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 1100px) {

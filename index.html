@@ -2,19 +2,26 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- oznacza maksymalna szerokość urządzenia i zoom jaki ma się ustawić po wejściu na stronę-->
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>MyPhilosophySentence</title>
 </head>
-  <body>
+  <body scroll>
+    <header class="parallax">
+    </header>
+
     <div class="container">
 
-      <header>
-        <div class="page-header">
-          <h1>Philosophy sentence and the owner.</h1>
-          <h3>Learn some motivation sentence and meet they owners!</h3>
+
+
+      <div class="showText" ng-class="{fadeText: boolChangeClass}">
+        <div>
+          <p>Philosophy sentence and the owner.</p>
+          <p>Learn some motivation sentence and meet they owners!</p>
+          <p>What is your mindset?</p>
         </div>
-      </header>
+      </div>
 
       <section ng-controller="listController as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.quizResultsActivate">
 
@@ -267,6 +274,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <script src="../QuizPhilozophy/js/app.js"></script>
 
