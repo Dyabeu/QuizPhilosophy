@@ -59,10 +59,10 @@ ul>li:last-child {
 }
 
 @-webkit-keyframes fadein{
-    from{
+    from {
        opacity: 1;
     }
-    to{
+    to {
         opacity: 0;
     }
 }
@@ -97,9 +97,7 @@ ul>li:last-child {
 .parallax {
       /* The image used */
     background-image: url("../images/bg.jpg");
-
-    min-height: 700px;
-
+    min-height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
