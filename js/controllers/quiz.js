@@ -60,7 +60,6 @@
 
     //Function set answer selected by player
     function answerSelected(index){
-      console.log(index);
       DataService.quizQuestionsData[thisBind.activeQuestion].playerAnswer = index;
     };
 
