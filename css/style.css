@@ -20,7 +20,11 @@ ul>li:last-child {
     margin-bottom: 40px;
 }
 
-.center-block {
+/* .center-block {
+    margin: 5 auto;
+} */
+
+.margin-group {
     margin: 5 auto;
 }
 
