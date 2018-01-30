@@ -13,16 +13,12 @@ body::-webkit-scrollbar {
 }
 
 ul>li {
-  list-style-type:none
+  list-style-type:none;
 }
 
 ul>li:last-child {
     margin-bottom: 40px;
 }
-
-/* .center-block {
-    margin: 5 auto;
-} */
 
 .margin-group {
     margin: 5 auto;
@@ -113,7 +109,6 @@ ul>li:last-child {
     height: 1px;
     background-color: rgba(255, 255, 255, 0.65);
 }
-
 
 .parallax {
       /* The image used */
